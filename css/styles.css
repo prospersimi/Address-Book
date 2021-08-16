@@ -1,0 +1,76 @@
+
+  body {
+    background-color: darkgray;
+  }
+
+  h1 {
+    text-align: center;
+    background-color: rgb(49, 143, 49);
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  ul {
+    padding-inline-start: 0;
+  } 
+
+  .container {
+    background-color: lightgrey;
+  }
+
+  .same {
+    border-radius: 100px;
+  }
+
+  .hidden1 {
+    display: none;
+  }
+
+  .hidden2 {
+    display: none;
+  }
+
+  .hidden3 {
+    display: none;
+  }
+
+  #show-contact {
+    display: none;
+  }
+
+
+  #contacts {
+    font-size: xx-large;
+    font-weight: 400;
+    list-style: none;
+    
+  }
+
+  #contacts :hover {
+    cursor: pointer;
+    color: darkgreen;
+    shape-outside: border-box;
+    box-shadow: black;
+    text-shadow: black;
+  }
+
+  #hidden {
+    background-color: rgb(49, 143, 49);
+    font-size: larger;
+    font-style: italic;
+    
+  }
+
+  #show-contact {
+    margin-top: 20px;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 7%;
+    border: 2px solid darkgrey;
+  }
+
+  #buttons {
+    margin-left: 70%;
+  }
