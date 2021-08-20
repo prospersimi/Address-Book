@@ -1,4 +1,4 @@
-### Author: ADEPITAN PROSPER SIMOILOLUWA.
+### AUTHOR: ADEPITAN PROSPER SIMOILOLUWA.
 
 # ADDRESS-BOOK.
 
@@ -9,7 +9,7 @@
 * HTML (Hypertext markup language).
 
 
-## Description OF Program.
+## DESCRIPTION OF PROGRAMME.
 
 This program is **a book or a database used for storing entries called contacts**. Each contact entry usually consists of a few standard fields (for example: first name, last name, company name, address, telephone number, e-mail address, mobile phone number). It allows users to store details of their personal contacts.
 
