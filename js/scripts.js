@@ -1,3 +1,4 @@
+/*
 // Business Logic for AddressBook ---------
 function AddressBook() {
   this.contacts = {};
@@ -32,7 +33,7 @@ AddressBook.prototype.deleteContact = function (id) {
 // Business Logic for Contacts ---------
 function Contact(firstName, middleName, lastName) {
   this.firstName = firstName;
-  this.middleName =middleName;
+  this.middleName = middleName;
   this.lastName = lastName;
 }
 
@@ -82,7 +83,7 @@ let addressBook = new AddressBook();
 function displayContactDetails(addressBookToDisplay) {
   let contactsList = $("ul#contacts");
   let htmlForContactInfo = "";
-  Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
+  Object.keys(addressBookToDisplay.contacts).forEach(function (key) {
     const contact = addressBookToDisplay.findContact(key);
     htmlForContactInfo += "<li id=" + contact.id + ">" + contact.firstName + " " + contact.lastName + "</li>";
   });
@@ -106,34 +107,34 @@ function showContact(contactId) {
   $(".homeaddress").html(contact.address.home);
   $(".workaddress").html(contact.address.work);
   $(".otheraddress").html(contact.address.other);
-  
+
   let buttons = $("#buttons");
   buttons.empty();
-  buttons.append("<button class='btn-primary' id=' + contact.id + '>Ok</button> <button class='btn-danger' id=" + contact.id +">Delete</button>");
+  buttons.append("<button class='btn-primary' id=' + contact.id + '>Ok</button> <button class='btn-danger' id=" + contact.id + ">Delete</button>");
 }
 
 
 function attachContactListeners() {
-  $("ul#contacts").on("click", "li", function() {
+  $("ul#contacts").on("click", "li", function () {
     showContact(this.id);
   });
 
-  $("#buttons").on("click", ".btn-primary", function() {
+  $("#buttons").on("click", ".btn-primary", function () {
     addressBook.deleteContact(this.id);
     $("#show-contact").hide();
     displayContactDetails(addressBook);
   });
 
-  $("#buttons").on("click", ".btn-danger", function() {
+  $("#buttons").on("click", ".btn-danger", function () {
     addressBook.deleteContact(this.id);
     $("#show-contact").hide();
     displayContactDetails(addressBook);
-})
+  })
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   attachContactListeners();
-  $("form#new-contact").submit(function(event) {
+  $("form#new-contact").submit(function (event) {
     event.preventDefault();
     const inputtedFirstName = $("input#new-first-name").val();
     const inputtedMiddleName = $("input#new-middle-name").val();
@@ -160,7 +161,7 @@ $(document).ready(function() {
     const inputtedOtherAddress = $("input#new-other-address").val();
 
     let newPhysicalAddress = new PhysicalAddress(inputtedHomeAddress, inputtedWorkAddress, inputtedOtherAddress);
-    
+
 
     $("input#new-first-name").val("");
     $("input#new-middle-name").val("");
@@ -189,18 +190,17 @@ $(document).ready(function() {
     $(".hidden3").hide();
   });
 
-  $("#same1").click(function(){
+  $("#same1").click(function () {
     $(".hidden1").toggle();
   })
 
-  $("#same2").click(function(){
+  $("#same2").click(function () {
     $(".hidden2").toggle();
   })
 
-  $("#same3").click(function(){
+  $("#same3").click(function () {
     $(".hidden3").toggle();
   })
 
 });
 
-  
