@@ -2,6 +2,13 @@
 
 # ADDRESS-BOOK.
 
+## TECHNOLOGIES:
+* Git (command line).
+* CSS (cascading style sheets (bootstrap.css & styles.css)).
+* JS  (JavaScript (jquery-3.6.0.js & scripts.js)).
+* HTML (Hypertext markup language).
+
+
 ## Description OF Program.
 
 This program is **a book or a database used for storing entries called contacts**. Each contact entry usually consists of a few standard fields (for example: first name, last name, company name, address, telephone number, e-mail address, mobile phone number). It allows users to store details of their personal contacts.
@@ -85,7 +92,7 @@ This program is **a book or a database used for storing entries called contacts*
 
 -----> Describe: AddressBook()
 
-* Description: This is a constructive function which stores all Contact in an object, in this case it was used to mock a database it behaves similarly as a database would. It has just two parameters in it({contacts = {}; currentId = 0;}).  It has prototypal functions assigned to it(addContact, assignId, findContact, deleteContact) which would be used to add a contact, assign id to a contact, find a contact, and delete a contact respectively.
+* Description Test: This is a constructive function which stores all Contact in an object, in this case it was used to mock a database it behaves similarly as a database would. It has just two parameters in it({contacts = {}; currentId = 0;}).  It has prototypal functions assigned to it(addContact, assignId, findContact, deleteContact) which would be used to add a contact, assign id to a contact, find a contact, and delete a contact respectively.
 
 ## COPYRIGHT AND LICENSE INFORMATION.
 
