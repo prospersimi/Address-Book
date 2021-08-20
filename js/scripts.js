@@ -77,7 +77,7 @@ function PhysicalAddress(home, work, other) {
   this.other = other;
 }
 
-/*
+
 // User Interface Logic ---------
 let addressBook = new AddressBook();
 
