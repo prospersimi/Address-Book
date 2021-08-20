@@ -55,7 +55,7 @@ Contact.prototype.addEmail = function (emailAddress) {
 Contact.prototype.addAddress = function (physicalAddress) {
   this.address = physicalAddress;
 }
-/*
+
 //Business Logic For PhoneNumber, EmailAddress & PhysicalAddress:-----
 function PhoneNumber(mobile, home, work, other) {
   this.mobile = mobile;
@@ -77,7 +77,7 @@ function PhysicalAddress(home, work, other) {
   this.other = other;
 }
 
-
+/*
 // User Interface Logic ---------
 let addressBook = new AddressBook();
 
