@@ -41,7 +41,7 @@ function Contact(firstName, middleName, lastName) {
 Contact.prototype.fullName = function () {
   return this.firstName + " " + this.lastName;
 };
-/*
+
 Contact.prototype.addNumber = function (phoneNumber) {
   this.phoneNumber = phoneNumber;
   return true;
@@ -55,7 +55,7 @@ Contact.prototype.addEmail = function (emailAddress) {
 Contact.prototype.addAddress = function (physicalAddress) {
   this.address = physicalAddress;
 }
-
+/*
 //Business Logic For PhoneNumber, EmailAddress & PhysicalAddress:-----
 function PhoneNumber(mobile, home, work, other) {
   this.mobile = mobile;
